@@ -1,4 +1,4 @@
-![image](https://github.com/yeahoLee/yeahoLee.github.io/blob/master/img/personal/longmao2.jpg)
+![image](https://pic4.zhimg.com/v2-3211b61551d229f2864e6503971a96df_r.jpg)
 
 You can use the [editor on GitHub](https://github.com/yeahoLee/yeahoLee.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
