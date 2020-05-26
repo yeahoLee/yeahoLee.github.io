@@ -45,17 +45,24 @@ height:100%;
 
 
 .page1{
-background:#89b32f;
+/*background:#89b32f;*/
+	background-image: url("../img/personal/page1.jpg");
 }
 
 .page2{
-background:#dc6c5f;
+/*background:#dc6c5f;*/
+	background-image: url("../img/personal/page2.jpg");
+
 }
 .page3{
-background:#64b9d2;
+/*background:#64b9d2;*/
+	background-image: url("../img/personal/page3.jpg");
+
 }
 .page4{
-background:green;
+/*background:green;*/
+	background-image: url("../img/personal/page4.jpg");
+
 }
 
 .top{z-index:9999}
