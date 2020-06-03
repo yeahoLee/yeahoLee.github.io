@@ -17,65 +17,58 @@ transform:none;
 transition:all 3s;
 }
 .ani{
-transform:scale(3) rotate(360deg) !important;
+transform:scale(1.5) rotate(360deg) !important;
 }</style>
 
 <script src='js/jquery.min.js'></script>
 
 </head>
 <body>
-
 <div id="cubeTransition">
-<div class="page1"><h2>Java</h2></div>
-<div class="page2"><h2 style='display:none;color: brown;'>spring</h2></div>
-<div class="page3"><h2 style='position:absolute;left:0px;top:-150px;color: chocolate;'>MySQL</h2></div>
-<div class="page4"><h2 style="color: hotpink">Redis</h2></div>
+    <div class="page1"><h2>语言</h2></div>
+    <div class="page2"><h2 style='display:none;color: brown;'>框架</h2></div>
+    <div class="page3"><h2 style='position:absolute;left:0px;top:-150px;color: chocolate;'>中间件</h2></div>
+    <div class="page4"><h2 style="color: hotpink">数据库</h2></div>
 </div>
-
 <ul id="bullets"></ul>
-
-
 <script>
-function animationIn(i){
-console.log(i,'i\'m in')
-switch(i) {
-    case 1:
-        $('.page2 h2').fadeIn();
-        break;
-    case 2:
-        $('.page3 h2').animate({top:'40%',left:'30%'},1000);
-        break;
-	case 3:
-			   setTimeout(function(){
-		 $('.page4 h2').addClass('ani')
-		 console.log('hhh')
-		},0)
-        break;
-    default:
-        ;
-}
-}
+    function animationIn(i){
+    console.log(i,'i\'m in')
+    switch(i) {
+        case 1:
+            $('.page2 h2').fadeIn();
+            break;
+        case 2:
+            $('.page3 h2').animate({top:'40%',left:'30%'},1000);
+            break;
+        case 3:
+                   setTimeout(function(){
+             $('.page4 h2').addClass('ani')
+            },0)
+            break;
+        default:
+            ;
+        }
+    }
 
-function animationOut(i){
-console.log(i,'i\'m out')
-switch(i) {
-    case 1:
-        $('.page2 h2').fadeOut();
-        break;
-    case 2:
-        $('.page3 h2').animate({top:0,left:0},1000);
-        break;
-	case 3:
-        $('.page4 h2').removeClass('ani')
-        break;
-    default:
-        ;
-}
-}
+    function animationOut(i){
+    switch(i) {
+        case 1:
+            $('.page2 h2').fadeOut();
+            break;
+        case 2:
+            $('.page3 h2').animate({top:0,left:0},1000);
+            break;
+        case 3:
+            $('.page4 h2').removeClass('ani')
+            break;
+        default:
+            ;
+        }
+    }
 </script>
 <script src='js/mousewheel.js'></script>
 <script src="js/jquery.touchSwipe.js"></script>
 <script src="js/cubeTransition.js"></script>
-
 </body>
 </html>
